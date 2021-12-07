@@ -28,7 +28,7 @@ void main()
 //Not a Good option to use loops when a large number is to be evaluated even though this program runs correctly.
 /*void main()
 {
-	int current = 1, count = 1, smallestMultiple = 0;
+	int current = 1, count = 1;
 	while (true)
 	{
 		count = 1;
