@@ -15,12 +15,12 @@ void main()
 	}
 	primes[0] = 0;
 	primes[1] = 0;
-	for (int i = 2; i <= sqrt(n); i++)//if a number is not struck off until its square root it won't be struck off at all.
+	for (int i = 2; i <= sqrt(n); i++)//if a number is not struck off until its square root it won't be struck off at all. First assuming all numbers are prime.
 	{
 		if (primes[i] == 1)
 		{
 			for (int j = 2; i * j <= n; j++)
-				primes[i * j] = 0;
+				primes[i * j] = 0;//Striking off composite numbers.
 		}
 	}
 	for (int i = 0; i <= n; i++)
