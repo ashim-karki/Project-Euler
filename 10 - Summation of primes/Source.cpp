@@ -11,12 +11,11 @@ void main()
 	int* primes = new int[n];
 	for (int i = 0; i <= n; i++)
 	{
-		primes[i] = 1; //1 if the array's position is prime else 0.
+		primes[i] = 1; //1 if the array's position is prime else 0.  First assuming all numbers are prime.
 	}
 	primes[0] = 0;
 	primes[1] = 0;
-	for (int i = 2; i <= sqrt(n); i++)//if a number is not struck off until its square root it won't be struck off at all. First assuming all numbers are prime.
-	{
+	for (int i = 2; i <= sqrt(n); i++)//if a number is not struck off until its square root it won't be struck off at all.
 		if (primes[i] == 1)
 		{
 			for (int j = 2; i * j <= n; j++)
